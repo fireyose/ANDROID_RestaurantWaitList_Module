@@ -72,7 +72,6 @@ public class MainActivity extends AppCompatActivity {
                 long id = (long) viewHolder.itemView.getTag();
                 //remove from DB
                 removeGuest(id);
-                // COMPLETED (10) call swapCursor on mAdapter passing in getAllGuests() as the argument
                 //update the list
                 mAdapter.swapCursor(getAllGuests());
             }
